@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+import Intro from './components/Intro/Intro';
+
+export function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Hello darkness my old friend.
-        </p>
+        <Intro/>
+        
       </header>
     </div>
   );
