@@ -6,6 +6,11 @@ function Intro() {
         <div className={ 'intro' }>
             <div className={ `intro-text` }>
                 <h1>Randy Le</h1>
+                    <br/>
+                    <div className={ `location-div` }>
+                        <img className={ `location` } src={ require( './location.png') } alt={ `Location` } />
+                        <h3>Canada</h3>
+                    </div>
                     <p>
                         welcome
                         <br/>
