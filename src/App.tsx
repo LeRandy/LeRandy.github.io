@@ -8,7 +8,6 @@ export function App() {
     <div className="App">
       <header className="App-header">
         <Intro/>
-        
       </header>
     </div>
   );
