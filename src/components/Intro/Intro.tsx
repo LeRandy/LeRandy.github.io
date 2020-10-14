@@ -10,7 +10,8 @@ function Intro() {
                         <br/>
                         <div className={ `location-div` }>
                             <img className={ `location` } src={ require( './location.png') } alt={ `Location` } />
-                            <h3>Canada</h3>
+                            <h3>CANADA</h3>
+                            <img className={ `flag` } src={ require( './flag.png' ) } alt={ `Flag` } />
                         </div>
                         <p>
                             welcome

@@ -3,6 +3,7 @@ div.intro {
     width: 100%;
 
     background-image: url("background.jpg");
+    background-size: cover;
     border-radius: 0 0 30px 30px;
 
     display: flex;
@@ -14,7 +15,14 @@ div.intro {
         justify-content: center;
 
         width: 65%;
+        padding: 1em;
         margin: auto;
+
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        border-radius: 15px;
+
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);   
 
         div.intro-text {
             flex: 1;
@@ -23,6 +31,8 @@ div.intro {
             flex-direction: column;
             justify-content: center;
             align-items: start;
+
+            padding-right: 10px;
     
             h1 {
                 color: #E85A4F;
@@ -32,6 +42,7 @@ div.intro {
             div.location-div {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                 
                 img.location {
                     width: 40px;
@@ -39,22 +50,28 @@ div.intro {
                 }
     
                 h3 { 
-                    margin: 2px 0 0 4px;
+                    margin: 2px 12px 0 4px;
+                }
+
+                img.flag {
+                    width: 50px;
+                    height: 30px;
                 }
             }
     
             text-align: left;
     
             p {
-                color: #8E8D8A;
+                color: white;
             }
         }
     
         div.intro-image {
             user-select: none;
 
-            flex: 1;
-            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
     
             img {
                 width: 400px;
