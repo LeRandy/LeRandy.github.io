@@ -11,7 +11,6 @@ function Intro() {
                         <div className={ `location-div` }>
                             <img className={ `location` } src={ require( './location.png') } alt={ `Location` } />
                             <h3>CANADA</h3>
-                            <img className={ `flag` } src={ require( './flag.png' ) } alt={ `Flag` } />
                         </div>
                         <p>
                             welcome
