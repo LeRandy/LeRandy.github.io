@@ -2,7 +2,7 @@
   "name": "randyle",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lerandy.github.io",
+  "homepage": "https://randy-le.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
