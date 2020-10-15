@@ -6,7 +6,7 @@ function Intro() {
         <div className={ 'intro' }>
             <div className={ `frosted-glass` }>
                 <div className={ `intro-text` }>
-                    <h1>Randy Leeeeeeeee</h1>
+                    <h1>Randy Le</h1>
                         <br/>
                         <div className={ `location-div` }>
                             <img className={ `location` } src={ require( './location.png') } alt={ `Location` } />
