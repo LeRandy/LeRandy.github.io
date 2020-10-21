@@ -1,82 +1,118 @@
-div.intro {
-    height: 90vh;
-    width: 100%;
-
-    background-image: url("background.jpg");
-    background-size: cover;
-    border-radius: 0 0 30px 30px;
-
-    display: flex;
-    align-items: center;
-
-    div.frosted-glass {
+div.intro-container {
+    div.intro-header {
+        height: 90vh;
+        width: 100%;
+    
+        background-image: url("background.jpg");
+        background-size: cover;
+        border-radius: 0 0 30px 30px;
+    
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        width: 65%;
-        padding: 1em;
-        margin: auto;
-
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(12px);
-        border-radius: 15px;
-
-        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);   
-
-        div.intro-text {
-            flex: 1;
+        flex-direction: column;
+        align-items: center;
     
+        color: #E98074;
+    
+        div.frosted-glass {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
+    
+            width: 65%;
+            max-height: 81%;
 
-            padding-right: 10px;
+            padding: 1em;
+            margin: auto;
     
-            h1 {
-                color: #D1E8E2;
-                margin: 0;
-            }
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 15px;
     
-            div.location-div {
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); 
+    
+            div.intro-text {
+                flex: 1;
+        
                 display: flex;
-                flex-direction: row;
-                align-items: center;
-                
-                img.location {
-                    width: 40px;
-                    height: 40px;
-                }
+                flex-direction: column;
+                justify-content: center;
     
-                h3 { 
-                    margin: 2px 12px 0 4px;
+                padding-right: 10px;
+        
+                h1 {
+                    color: #D1E8E2;
+                    margin: 0;
                 }
-
-                img.flag {
-                    width: 50px;
-                    height: 30px;
+        
+                div.location-div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    img.location {
+                        width: 40px;
+                        height: 40px;
+                    }
+        
+                    h3 { 
+                        margin: 2px 12px 0 4px;
+                    }
+    
+                    img.flag {
+                        width: 50px;
+                        height: 30px;
+                    }
+                }
+        
+                text-align: left;
+        
+                p {
+                    color: #FFFFFF;
                 }
             }
+        
+            div.intro-image {
+                user-select: none;
     
-            text-align: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                img {
+                    height: 100%;
+
+                    max-width: 400px;
+                    max-height: 400px;
     
-            p {
-                color: #FFFFFF;
+                    border-radius: 50%;
+                }
             }
         }
-    
-        div.intro-image {
-            user-select: none;
+    }
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            img {
-                width: 400px;
-                height: 400px;
+    div.intro-footer {
+        height: 10vh;
 
-                border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div.text {
+            text-align: right;
+            margin-right: 50px;
+        }
+
+        svg {
+            -webkit-animation: action 2s infinite  alternate;
+            animation: action 2s infinite  alternate;
+
+            @-webkit-keyframes action {
+                0% { transform: translateY(8px); }
+                100% { transform: translateY(-8px); }
+            }
+            @keyframes action {
+                0% { transform: translateY(8px); }
+                100% { transform: translateY(-8px); }
             }
         }
     }
