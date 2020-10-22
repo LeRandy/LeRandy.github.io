@@ -1,4 +1,4 @@
-import { ArrowDownIcon, Icon } from 'evergreen-ui';
+import { ArrowDownIcon } from 'evergreen-ui';
 import React from 'react';
 import './Intro.scss';
 

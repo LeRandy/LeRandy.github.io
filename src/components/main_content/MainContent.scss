@@ -2,21 +2,6 @@ div.content-scroller {
     display: flex;
     flex-direction: row nowrap;
     justify-content: center;
-
-
-    div.navigation {
-        position: sticky;
-
-        width: 300px;
-        padding: 20px;
-
-        background-color: lightgrey;
-        border-radius: 14px;
-    }
-
-    div.content {
-
-    }
 }
 
 @media (max-width: 899px) {
@@ -28,7 +13,6 @@ div.content-scroller {
         }
 
         div.content {
-            width: 100vw;
             padding: 0 12px;
         }
     }

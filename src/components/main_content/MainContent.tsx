@@ -1,14 +1,13 @@
 import React from 'react';
+import ContentNavigationMenu from './ContentNavigationMenu';
 import './MainContent.scss';
 
 function MainContent() {
     return (
         <div className={ `content-scroller` }>
-            <div className={ `navigation` }>
-                NAVIGATION
-            </div>
+            <ContentNavigationMenu/>
             <div className={ `content` }>
-                CONTENT
+                Content In Progress
             </div>
         </div>      
     );

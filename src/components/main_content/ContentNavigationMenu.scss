@@ -1,0 +1,29 @@
+div.content-navigation-container {
+    position: sticky;
+    top: 0;
+
+    width: 275px;
+    max-height: 300px;
+
+    margin: 0 50px 40px 20px;
+
+    div.content-navigation-menu {
+        padding: 20px;
+    
+        display: flex;
+        flex-direction: column;
+    
+        background-color: rgba(41, 41, 41, 0.05);
+        border-radius: 15px;
+
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); 
+    
+        a {
+            color: #115644;
+            font-size: 20px;
+            text-decoration: none;
+    
+            margin-bottom: 5px;
+        }
+    }    
+}
