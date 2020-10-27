@@ -1,7 +1,11 @@
 import React from 'react';
 import './ContentNavigationMenu.scss';
 
-function ContentNavigationMenu() {
+interface Props {
+    handleMenuClick: ( content: string ) => void;
+}
+
+function ContentNavigationMenu( props: Props ) {
     const menuItems = [
         { top: "Back to the top" },
         { introduction: "Introduction" },
@@ -14,7 +18,7 @@ function ContentNavigationMenu() {
             <div className={ `content-navigation-menu` }>
                 { 
                     menuItems.map( ( menuItem ) => 
-                        <a href={ `#${ Object.keys(menuItem) }` }>{ Object.values( menuItem ) }</a>
+                        <div className={`menu-item`} onClick={ () => props.handleMenuClick( Object.keys( menuItem )[0] ) }>{ Object.values( menuItem )[0] }</div>
                     )
                 }  
             </div>

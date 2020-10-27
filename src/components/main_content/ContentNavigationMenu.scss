@@ -13,17 +13,27 @@ div.content-navigation-container {
         display: flex;
         flex-direction: column;
     
-        background-color: rgba(41, 41, 41, 0.05);
+        background-color: white;
         border-radius: 15px;
-
         box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); 
     
-        a {
-            color: #115644;
-            font-size: 20px;
-            text-decoration: none;
-    
+        div.menu-item {
+            width: fit-content;
             margin-bottom: 5px;
+
+            color: #000000;
+            font-size: 20px;
+
+            cursor: pointer;
+
+            &.active {
+                color: #E85A4F;
+            }
+        }
+
+        div.menu-item:hover {
+            font-weight: bold;
+            color: #E85A4F;
         }
     }    
 }

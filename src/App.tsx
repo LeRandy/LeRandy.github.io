@@ -10,9 +10,7 @@ export function App() {
       <header className="App-header">
         <Intro/>
       </header>
-      <div className={ `main-content` }>
         <MainContent/>
-      </div>
     </div>
   );
 }
