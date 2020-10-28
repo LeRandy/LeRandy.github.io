@@ -15,6 +15,11 @@ const Frame = styled('div')`
 const Title = styled('span')`
   vertical-align: middle;
   cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+    color: #115644;
+  }
 `
 
 const Content = styled(animated.div)`
