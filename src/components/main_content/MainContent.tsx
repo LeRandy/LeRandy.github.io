@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 import ContentHandler from './ContentHandler';
-import ContentNavigationMenu from './ContentNavigationMenu';
 import './MainContent.scss';
+import ContentNavigationMenu from './navigation_menu/ContentNavigationMenu';
 
 interface State {
     content: string;
 }
 
-function MainContent() {
-    const [content, setContent] = useState<string|null>( null );
+export const contentItems = [ `About` ];
 
-    function handleMenuClick( content: string ) {
+function MainContent() {
+    const [content, setContent] = useState<string|null>( contentItems[0] );
+
+    function handleMenuClick( content:any ) {
         setContent( content );
     }
 
     return (
         <div className={ `content-scroller` }>
-            <ContentNavigationMenu handleMenuClick={ handleMenuClick }/>
+            {/* <ContentNavigationMenu handleMenuClick={handleMenuClick}/> */}
+            { ContentNavigationMenu(content, handleMenuClick) }
             <div className={ `content` }>
                 <ContentHandler/>
             </div>
