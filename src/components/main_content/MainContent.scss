@@ -2,23 +2,24 @@ div.content-scroller {
     display: flex;
     flex-direction: row nowrap;
     justify-content: center;
-}
 
-div.content {
-    padding: 20px;
-    width: 60vw;
+    div.content {
+        padding: 20px 40px;
+        width: 60vw;
+    }
 }
 
 @media (max-width: 899px) {
     div.content-scroller {
         flex-direction: column;
 
-        div.navigation {
+        div.content-navigation-container {
             position: initial;
         }
 
         div.content {
             width: 100vw; 
+            box-sizing: border-box;
         }
     }
 }

@@ -10,7 +10,7 @@ interface State {
 export const contentItems = [ `About` ];
 
 function MainContent() {
-    const [content, setContent] = useState<string|null>( contentItems[0] );
+    const [content, setContent] = useState( contentItems[0] );
 
     function handleMenuClick( content:any ) {
         setContent( content );
@@ -21,7 +21,7 @@ function MainContent() {
             {/* <ContentNavigationMenu handleMenuClick={handleMenuClick}/> */}
             { ContentNavigationMenu(content, handleMenuClick) }
             <div className={ `content` }>
-                <ContentHandler/>
+                <ContentHandler content={ content }/>
             </div>
         </div>      
     );

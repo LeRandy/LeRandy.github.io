@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import About from './content/About';
 import './ContentHandler.scss';
 
-function ContentHandler() {
+interface Props {
+    content: string;
+}
+
+function ContentHandler( props: Props ) {
+    function renderContent() {
+        switch ( props.content ) {
+            case `About`: 
+                return <About/>
+        }
+    }
+
     return (
-        <div>
-            CONTENT IN PROGRESS
+        <div className={ `content-handler` }>
+            <div className={ `title` }>{ props.content }</div>
+            { renderContent() }
         </div>
     )
 }
