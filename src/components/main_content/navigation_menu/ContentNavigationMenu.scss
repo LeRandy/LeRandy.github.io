@@ -20,6 +20,10 @@ div.content-navigation-container {
         border-radius: 15px;
         box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 
+        svg {
+            margin: 0;
+        }
+
         svg:hover {
             color: #115644;            
         }
