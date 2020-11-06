@@ -11,14 +11,14 @@ div.content-navigation-container {
     font-family: sans-serif;
 
     div.content-navigation-menu {
-        padding: 20px;
+        padding: 10px 20px 20px 20px;
     
         display: flex;
         flex-direction: column;
     
-        background-color: rgba(54, 54, 69, 0.05);
+        background-color: rgba(54, 54, 69, 0.15);
         border-radius: 15px;
-        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+        // box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 
         svg {
             margin: 0;
