@@ -1,5 +1,5 @@
 import React from 'react';
-import About from './content/About';
+import About from './content/about/About';
 import './ContentHandler.scss';
 
 interface Props {

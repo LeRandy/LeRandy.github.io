@@ -1,0 +1,37 @@
+div.transition-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+
+    .simple-trans-main {
+        width: 100%;
+        min-height: 240px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        cursor: pointer;
+    
+        img {
+            position: absolute;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            will-change: transform, opacity;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .simple-trans-main {
+        min-height: 150px
+    }
+}

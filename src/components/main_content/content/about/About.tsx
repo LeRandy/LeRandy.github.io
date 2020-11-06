@@ -1,7 +1,8 @@
 import React from 'react';
-import Card from '../../Card';
-import Showcase from '../../Showcase';
-import Subheading from '../../Subheading';
+import Card from '../../../Card';
+import Showcase from '../../../Showcase';
+import Subheading from '../../../Subheading';
+import Transition from './Transition';
 // import './About.scss';
 
 function About() {
@@ -21,7 +22,16 @@ function About() {
             </Showcase>
             <br/>
             <Subheading>Skills & Experience</Subheading>
-            *Insert Simple Transition Here*
+            <Showcase footnote={ `simple transition: react-spring` }>
+                <Transition 
+                    isLocal={ true } 
+                    images={ [ 
+                        `./react.png`, 
+                        `./typescript.png`, 
+                        `./graphql.png`
+                    ] }
+                />
+            </Showcase>
         </div>
     )
 }
