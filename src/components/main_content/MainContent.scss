@@ -6,6 +6,8 @@ div.content-scroller {
     div.content {
         padding: 20px 40px;
         width: 60vw;
+        min-height: 100vh;
+        box-sizing: border-box;
     }
 }
 

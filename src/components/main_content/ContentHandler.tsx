@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import About from './content/About';
 import './ContentHandler.scss';
 
