@@ -6,7 +6,7 @@ interface Props {
     content: string;
 }
 
-function ContentHandler( props: Props ) {
+export function ContentHandler( props: Props ) {
     function renderContent() {
         switch ( props.content ) {
             case `About`: 
@@ -22,4 +22,4 @@ function ContentHandler( props: Props ) {
     )
 }
 
-export default ContentHandler;
+export let MenuItemOrder = [ `About`, `Flip Card`, `Masonry Grid`, `View Pager`, `Contact Information` ];

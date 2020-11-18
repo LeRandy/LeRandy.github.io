@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import ContentHandler from './ContentHandler';
+import { ContentHandler } from './ContentHandler';
 import './MainContent.scss';
 import ContentNavigationMenu from './navigation_menu/ContentNavigationMenu';
-
-interface State {
-    content: string;
-}
 
 export const contentItems = [ `About` ];
 

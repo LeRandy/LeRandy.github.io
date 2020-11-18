@@ -22,6 +22,7 @@ function About() {
             </Showcase>
             <br/>
             <Subheading>Skills & Experience</Subheading>
+            <p>Most of my skill, experience, and interests are in the following libraries/frameworks: React, TypeScript, and GraphQL. Click on the image below!</p>
             <Showcase footnote={ `simple transition: react-spring` }>
                 <Transition 
                     isLocal={ true } 
