@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './content/about/About';
+import FlipFade from './content/flip_fade/FlipFade';
 import './ContentHandler.scss';
 
 interface Props {
@@ -11,6 +12,8 @@ export function ContentHandler( props: Props ) {
         switch ( props.content ) {
             case `About`: 
                 return <About/>
+            case `Flip Card & Image Fade`:
+                return <FlipFade/>
         }
     }
 

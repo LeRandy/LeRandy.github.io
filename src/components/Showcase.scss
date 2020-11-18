@@ -1,4 +1,7 @@
 div.showcase {
+    display: flex;
+    flex-direction: column;
+
     div.footnote {
         font-size: 14px;
         color: cadetblue;

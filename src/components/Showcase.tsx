@@ -8,7 +8,7 @@ interface Props {
 
 function Showcase( props: Props ) {
     return (
-        <div className={`showcase`} style={ { display: `flex`, flexDirection: `column` } }>
+        <div className={ `showcase` }>
             { props.children }
             <div className={ `footnote` }>
                 { props.footnote }
