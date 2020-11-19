@@ -14,10 +14,6 @@ function FlipCard ( props ) {
     transform: `perspective(600px) rotateX(${ flipped ? 180 : 0 }deg)`,
     config: { mass: 5, tension: 500, friction: 80 }
   } );
-
-  function url( address ) {
-    return `url(` + address + `)`;
-  }
   
   return (
     <div className={ `flip-card` }>
@@ -41,6 +37,10 @@ function FlipCard ( props ) {
       />
     </div>
   )
+}
+
+export function url( address ) {
+  return `url(` + address + `)`;
 }
 
 export default FlipCard;
