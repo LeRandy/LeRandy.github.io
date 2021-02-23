@@ -61,7 +61,7 @@ function ContentNavigationMenu ( content, handleMenuClick ) {
           <Tree name="Flip Card & Image Fade" active={content === `Flip Card & Image Fade`} onClick={ handleMenuClick }/> { /* Dogs */ }
           <Tree name="Masonry Grid" active={content === `Masonry Grid`} onClick={ handleMenuClick }/> { /* Basketball */ }
           <Tree name="View Pager" active={content === `View Pager`} onClick={ handleMenuClick }/> { /* Anime/Manga */ }
-          <Tree name="Games" active={content === `Games`} onClick={ handleMenuClick }/> { /* Horde */ }
+          <Tree name="Notifications" active={content === `Notifications`} onClick={ handleMenuClick }/> { /* Horde */ }
         </Tree>
         <Tree name="Contact Information" active={content === `Contact Information`} onClick={ handleMenuClick }/>
       </div>

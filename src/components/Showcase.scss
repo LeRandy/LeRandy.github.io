@@ -2,9 +2,10 @@ div.showcase {
     display: flex;
     flex-direction: column;
 
-    div.footnote {
+    div.footnote, div.header {
         font-size: 14px;
         color: cadetblue;
         font-style: italic;
     }
+    
 }

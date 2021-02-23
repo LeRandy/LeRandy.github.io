@@ -1,4 +1,5 @@
 import React from 'react';
+import Subheading from '../Subheading';
 import About from './content/about/About';
 import FlipFade from './content/flip_fade/FlipFade';
 import './ContentHandler.scss';
@@ -14,6 +15,8 @@ export function ContentHandler( props: Props ) {
                 return <About/>
             case `Flip Card & Image Fade`:
                 return <FlipFade/>
+            default:
+                return <Subheading>*IN PROGRESS*</Subheading>
         }
     }
 
@@ -25,4 +28,4 @@ export function ContentHandler( props: Props ) {
     )
 }
 
-export let MenuItemOrder = [ `About`, `Flip Card`, `Masonry Grid`, `View Pager`, `Contact Information` ];
+export let MenuItemOrder = [ `About`, `Flip Card`, `Masonry Grid`, `View Pager`, `Notifications`, `Contact Information` ];
