@@ -2,6 +2,7 @@ import React from 'react';
 import Subheading from '../Subheading';
 import About from './content/about/About';
 import FlipFade from './content/flip_fade/FlipFade';
+import LibrariesUsed from './content/libraries_used/LibrariesUsed';
 import './ContentHandler.scss';
 
 interface Props {
@@ -15,6 +16,8 @@ export function ContentHandler( props: Props ) {
                 return <About/>
             case `Flip Card & Image Fade`:
                 return <FlipFade/>
+            case `Libraries Used`:
+                return <LibrariesUsed/>
             default:
                 return <Subheading>*IN PROGRESS*</Subheading>
         }
