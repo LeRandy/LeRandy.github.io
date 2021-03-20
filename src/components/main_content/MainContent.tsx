@@ -14,8 +14,7 @@ function MainContent() {
 
     return (
         <div className={ `content-scroller` }>
-            {/* <ContentNavigationMenu handleMenuClick={handleMenuClick}/> */}
-            { ContentNavigationMenu(content, handleMenuClick) }
+            { ContentNavigationMenu( content, handleMenuClick ) }
             <div className={ `content` }>
                 <ContentHandler content={ content }/>
             </div>

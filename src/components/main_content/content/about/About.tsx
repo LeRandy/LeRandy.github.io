@@ -8,6 +8,7 @@ import Transition from './Transition';
 function About() {
     return (
         <div>
+            <Subheading>Intro</Subheading>
             <p>Welcome to my website!</p>
             <p>The purpose of this website is for me to help you understand more about who I am with the use of an assortment of different libraries and designs.</p>
             <p><i>The layout and design of this website is 99% pure HTML/CSS/JavaScript without the use of any out-of-the-box packages or libraries.</i></p>

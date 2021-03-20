@@ -39,6 +39,7 @@ function FlipCard ( props ) {
   )
 }
 
+// for usage in css: background-image
 export function url( address ) {
   return `url(` + address + `)`;
 }
