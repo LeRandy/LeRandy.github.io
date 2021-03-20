@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from '../../../Link';
-import Subheading from '../../../Subheading';
 
 function LibrariesUsed() {
     return (

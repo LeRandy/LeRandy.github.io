@@ -10,7 +10,7 @@ interface Props {
 function Link ( props: Props ) {
     return (
         <div className={ `link` }>
-            <a className={ `link` } href={ props.link } target="_blank">
+            <a className={ `link` } href={ props.link } target="_blank" rel="noopener noreferrer">
                 { props.children }
                 <LinkIcon size={ 24 } style={ { paddingLeft: `5px` } }/>
             </a>
