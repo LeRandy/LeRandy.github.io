@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Intro from './components/intro/Intro';
+import Intro from './components/Intro/Intro';
 import MainContent from './components/main_content/MainContent';
 
 export function App() {

@@ -1,6 +1,7 @@
 import { ArrowDownIcon } from 'evergreen-ui';
-import React from 'react';
 import './Intro.scss';
+import location from './location.png';
+import profilepic from './profile-pic.jpg';
 
 function Intro() {
     return (
@@ -11,7 +12,7 @@ function Intro() {
                         <h1>Randy Le</h1>
                             <br/>
                             <div className={ `location-div` }>
-                                <img className={ `location` } src={ require( './location.png') } alt={ `Location` } />
+                                <img className={ `location` } src={ location } alt={ `Location` } />
                                 <h3>CANADA</h3>
                             </div>
                             <p>
@@ -21,7 +22,7 @@ function Intro() {
                             </p>
                     </div>
                     <div className={ `intro-image` }>
-                        <img src={ require( './profile-pic.jpg' ) } alt={ `Profile` }/>
+                        <img src={ profilepic } alt={ `Profile` }/>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,10 @@
-import React from 'react';
 import Card from '../../../Card';
 import Showcase from '../../../Showcase';
 import Subheading from '../../../Subheading';
 import Transition from './Transition';
-// import './About.scss';
+import reactImage from './react.png';
+import graphqlImage from './graphql.png';
+import typescriptImage from './typescript.png';
 
 function About() {
     return (
@@ -26,11 +27,8 @@ function About() {
             <p>Most of my skill, experience, and interests are in the following libraries/frameworks: React, TypeScript, and GraphQL. However, I'm always keen to learn new technologies! Click on the image below!</p>
             <Showcase footnote={ `simple transition: react-spring` }>
                 <Transition 
-                    isLocal={ true } 
                     images={ [ 
-                        `./react.png`, 
-                        `./typescript.png`, 
-                        `./graphql.png`
+                        reactImage, typescriptImage, graphqlImage
                     ] }
                 />
             </Showcase>

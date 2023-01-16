@@ -8,7 +8,7 @@ function FlipFade() {
     return (
         <div>
             <Subheading>Flip Card</Subheading>
-            <p>I love dogs, I have 2 of them. This is Choji, he's a 9 year-old purebred Chihuahua.</p>
+            <p>I love dogs, I have 2 of them. This is Choji, he's an 11 year-old purebred Chihuahua.</p>
             <Showcase footnote={ `flip card: react-spring` }>
                 <FlipCard
                     front={ `//im.vsco.co/aws-us-west-2/148dbe/66644364/5fb6ddd301d61e328c000001/vsco5fb6ddd565f63.jpg?w=920&dpr=1` }

@@ -18,7 +18,6 @@ const Title = styled('span')`
   margin-left: 10px;
 
   &:hover {
-    font-weight: bold;
     color: #115644;
   }
 `
