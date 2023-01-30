@@ -16,10 +16,6 @@ const Title = styled('span')`
   vertical-align: middle;
   cursor: pointer;
   margin-left: 10px;
-
-  &:hover {
-    color: #115644;
-  }
 `
 
 const Content = styled(animated.div)`

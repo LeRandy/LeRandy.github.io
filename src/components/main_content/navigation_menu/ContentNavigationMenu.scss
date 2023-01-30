@@ -20,6 +20,15 @@ div.content-navigation-container {
         border-radius: 15px;
         // box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 
+        span:hover { 
+            color: #115644;
+        }
+
+        .active { 
+            color: #115644;
+            font-weight: bold;
+        }
+
         svg {
             margin: 0 !important;
         }
@@ -30,7 +39,31 @@ div.content-navigation-container {
 
         svg:hover + span {
             color: #115644;
-            font-weight: bold;
         }
     }    
+}
+
+.dark-mode {
+    div.content-navigation-container {
+        span, svg {
+            color: white;
+        }
+
+        span:hover {
+            color: #98ebd5 !important;
+        }
+
+        .active {
+            color: #98ebd5 !important;
+            font-weight: bold;
+        }
+
+        svg:hover {
+            color: #98ebd5 !important;            
+        }
+
+        svg:hover + span {
+            color: #98ebd5 !important;
+        }
+    }
 }

@@ -35,7 +35,8 @@ const Tree = memo(({ children, name, style, defaultOpen = false, active, onClick
     <Frame>
       { handleIcon() }
       <Title 
-        style={ { ...style, fontWeight: active ? `bold`: null, color: active ? `#115644` : null } } 
+        className={ active ? `active` : `` }
+        style={ { ...style } } 
         onClick={ () => { 
           if ( `${children ? ( isOpen ? 'Minus' : 'Plus') : 'Close'}` !== `Close` ) {
              setOpen( !isOpen );

@@ -18,8 +18,6 @@ interface Props {
 function NestedBoxes( props: Props ) {
   const [open, set] = useState(false)
 
-  console.log( props.initialImage );
-
   const data = props.data;
 
   const springApi = useSpringRef()
