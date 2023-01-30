@@ -1,6 +1,7 @@
 import React from 'react';
 import Subheading from '../Subheading';
 import About from './content/about/About';
+import NestedContent from './content/nested_content/NestedContent';
 import FlipFade from './content/flip_fade/FlipFade';
 import LibrariesUsed from './content/libraries_used/LibrariesUsed';
 import './ContentHandler.scss';
@@ -16,6 +17,8 @@ export function ContentHandler( props: Props ) {
                 return <About/>
             case `Flip Card & Image Fade`:
                 return <FlipFade/>
+            case `Nested Content`:
+                return <NestedContent/>
             case `Libraries Used`:
                 return <LibrariesUsed/>
             default:
@@ -30,5 +33,3 @@ export function ContentHandler( props: Props ) {
         </div>
     )
 }
-
-export let MenuItemOrder = [ `About`, `Flip Card`, `Masonry Grid`, `View Pager`, `Notifications`, `Contact Information` ];

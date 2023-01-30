@@ -3,10 +3,10 @@ import { ContentHandler } from './ContentHandler';
 import './MainContent.scss';
 import ContentNavigationMenu from './navigation_menu/ContentNavigationMenu';
 
-export const contentItems = [ `About` ];
+const defaultContent = `About`;
 
 function MainContent() {
-    const [content, setContent] = useState( contentItems[0] );
+    const [content, setContent] = useState( defaultContent );
 
     function handleMenuClick( content:any ) {
         setContent( content );
