@@ -66,7 +66,7 @@ function ContentNavigationMenu ( content, handleMenuClick ) {
           <Tree name="Notifications" active={content === `Notifications`} onClick={ handleMenuClick }/> { /* Horde */ }
         </Tree>
         <Tree name="Libraries Used" active={ content === `Libraries Used` } onClick={ handleMenuClick }/>
-        <Tree name="Contact Information" active={content === `Contact Information`} onClick={ handleMenuClick }/>
+        <Tree name="Contact Information" active={ content === `Contact Information` } onClick={ handleMenuClick }/>
       </div>
     </div>
   )
