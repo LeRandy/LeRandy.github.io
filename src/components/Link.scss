@@ -11,3 +11,15 @@ div.link {
         text-decoration: none;
     }
 }
+
+.dark-mode {
+    div.link {
+        a.link {
+            color: #98ebd5 !important;
+        }
+
+        a.link:hover {
+            font-weight: bold;
+        }
+    }
+}
