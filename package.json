@@ -9,11 +9,13 @@
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
 		"evergreen-ui": "^6.13.3",
+		"lodash.clamp": "4.0.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "^5.0.1",
 		"react-spring": "^8.0.27",
 		"react-use-gesture": "^7.0.16",
+		"react-use-measure": "2.1.1",
 		"resize-observer-polyfill": "^1.5.1",
 		"sass": "^1.57.1",
 		"styled-components": "^5.2.0",
@@ -22,7 +24,7 @@
 	"scripts": {
 		"start": "react-scripts --openssl-legacy-provider start",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -d build -r https://github.com/randy-le/randy-le.github.io",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
@@ -43,6 +45,7 @@
 		]
 	},
 	"devDependencies": {
+		"@types/lodash.clamp": "^4.0.7",
 		"gh-pages": "^3.2.3"
 	}
 }

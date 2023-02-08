@@ -59,11 +59,11 @@ function ContentNavigationMenu ( content, handleMenuClick ) {
       <div className={ `content-navigation-menu` }>
         <Tree name="About" active={content === `About`} onClick={ handleMenuClick }/>
         <Tree name="Components & Designs">
-          <Tree name="Flip Card & Image Fade" active={content === `Flip Card & Image Fade`} onClick={ handleMenuClick }/> { /* Dogs */ }
-          <Tree name="Nested Content" active={content === `Nested Content`} onClick={ handleMenuClick }/> { /* Basketball */ }
-          <Tree name="Masonry Grid" active={content === `Masonry Grid`} onClick={ handleMenuClick }/> { /* Basketball */ }
-          <Tree name="View Pager" active={content === `View Pager`} onClick={ handleMenuClick }/> { /* Anime/Manga */ }
-          <Tree name="Notifications" active={content === `Notifications`} onClick={ handleMenuClick }/> { /* Horde */ }
+          <Tree name="Flip Card & Image Fade" active={content === `Flip Card & Image Fade`} onClick={ handleMenuClick }/>
+          <Tree name="Nested Content" active={content === `Nested Content`} onClick={ handleMenuClick }/>
+          <Tree name="Page Viewer" active={content === `View Pager`} onClick={ handleMenuClick }/> { /* Keebs */ }
+          <Tree name="Masonry Grid" active={content === `Masonry Grid`} onClick={ handleMenuClick }/>
+          <Tree name="Notifications" active={content === `Notifications`} onClick={ handleMenuClick }/>
         </Tree>
         <Tree name="Libraries Used" active={ content === `Libraries Used` } onClick={ handleMenuClick }/>
         <Tree name="Contact Information" active={ content === `Contact Information` } onClick={ handleMenuClick }/>

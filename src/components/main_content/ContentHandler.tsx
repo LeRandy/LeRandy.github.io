@@ -6,6 +6,7 @@ import FlipFade from './content/flip_fade/FlipFade';
 import LibrariesUsed from './content/libraries_used/LibrariesUsed';
 import './ContentHandler.scss';
 import ContactInformation from './content/contact_information/ContactInformation';
+import ViewPager from './content/view_pager/ViewPager';
 
 interface Props {
     content: string;
@@ -20,6 +21,8 @@ export function ContentHandler( props: Props ) {
                 return <FlipFade/>
             case `Nested Content`:
                 return <NestedContent/>
+            case `Page Viewer`:
+                return <ViewPager/>
             case `Libraries Used`:
                 return <LibrariesUsed/>
             case `Contact Information`:
