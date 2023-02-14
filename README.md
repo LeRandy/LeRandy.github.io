@@ -1,1 +1,1 @@
-# Visit the page at https://randy-le.github.io
+# https://randy-le.github.io
