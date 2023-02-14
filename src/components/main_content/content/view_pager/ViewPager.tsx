@@ -11,6 +11,7 @@ function ViewPager() {
     return (
         <div>
             <p>I'm a mechanical keyboard enthusiast. Here are some of my keyboard builds.</p>
+            <b>Swipe To Reveal More Images</b>
             <Showcase footnote={ `view-pager: react-spring` }>
                 <PageViewer pages={ pages }/>
             </Showcase>

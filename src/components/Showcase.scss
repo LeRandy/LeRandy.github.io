@@ -8,5 +8,47 @@ div.showcase {
         font-style: italic;
         pointer-events: none;
     }
-    
+
+div.content-display {
+    width: 100%;
+    height: 100%;
+
+    &.fit-content {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    div.interaction {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3rem;
+        line-height: 3rem;
+        width: 50%;
+        padding: 0 1rem;
+        font-size: 1rem;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #FFF;
+        text-align: center;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    div.spoiler {
+        filter: blur(10px);
+        transition: 0.3s;
+        cursor: initial;
+        pointer-events: none;
+    }
+}
 }
