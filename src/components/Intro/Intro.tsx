@@ -3,10 +3,14 @@ import './Intro.scss';
 import location from './location.png';
 import profilepic from './profile-pic.jpg';
 
-function Intro() {
+interface Props {
+    background: string;
+}
+
+function Intro( props: Props ) {
     return (
         <div className={ `intro-container` }>
-            <div className={ 'intro-header' }>
+            <div className={ 'intro-header' } style={ { backgroundImage: props.background } }>
                 <div className={ `frosted-glass` }>
                     <div className={ `intro-text` }>
                         <h1>Randy Le</h1>
