@@ -11,14 +11,14 @@ import {
 import './NestedBoxes.scss';
 
 interface Props {
-    initialImage?: any;
-    data: Object[];
+    initialImage: any;
+    data: {name: string, background: string}[];
 }
 
 function NestedBoxes( props: Props ) {
   const [open, set] = useState(false)
 
-  const data = props.data;
+  const { data, initialImage } = props;
 
   const springApi = useSpringRef()
   const { size, ...rest } = useSpring({
@@ -27,7 +27,7 @@ function NestedBoxes( props: Props ) {
     from: { size: '35%' },
     to: {
       size: open ? '100%' : '35%',
-      backgroundImage: open ? 'none' : `url(https://www.edigitalagency.com.au/wp-content/uploads/NBA-logo-png.png)`,
+      backgroundImage: open ? 'none' : `url(${initialImage})`,
       backgroundSize: 'contain',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
