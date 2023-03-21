@@ -28,9 +28,8 @@ function backgroundImage() {
       "url(https://drg2mhzb9zcts.cloudfront.net/themes/wallpapers/tomorrow_2_ultrawide.jpg)",
       "url(https://drg2mhzb9zcts.cloudfront.net/themes/wallpapers/tomorrow_3_ultrawide.jpg)",
       "url(https://drg2mhzb9zcts.cloudfront.net/themes/wallpapers/tomorrow_4_ultrawide.jpg)",
-      "url(https://drg2mhzb9zcts.cloudfront.net/themes/wallpapers/tomorrow_5_ultrawide.jpg)",
-      "url(https://drg2mhzb9zcts.cloudfront.net/themes/wallpapers/tomorrow_6_ultrawide.jpg)",
-  ];
+      "url(https://drg2mhzb9zcts.cloudfront.net/themes/wallpapers/tomorrow_5_ultrawide.jpg)"
+      ];
   
   return backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
 }
