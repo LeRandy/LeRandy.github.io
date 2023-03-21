@@ -1,4 +1,3 @@
-import React from 'react';
 import Subheading from '../Subheading';
 import About from './content/about/About';
 import NestedContent from './content/nested_content/NestedContent';
@@ -7,6 +6,8 @@ import LibrariesUsed from './content/libraries_used/LibrariesUsed';
 import './ContentHandler.scss';
 import ContactInformation from './content/contact_information/ContactInformation';
 import ViewPager from './content/view_pager/ViewPager';
+import DraggableList from './content/draggable_list/DraggableList';
+import Notifications from './content/notifications/Notifications';
 
 interface Props {
     content: string;
@@ -27,6 +28,10 @@ export function ContentHandler( props: Props ) {
                 return <LibrariesUsed/>
             case `Contact Information`:
                 return <ContactInformation/>
+            case `Draggable List`:
+                return <DraggableList/>
+            case `Notifications`:
+                return <Notifications/>
             default:
                 return <Subheading>*IN PROGRESS*</Subheading>
         }
