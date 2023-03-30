@@ -1,9 +1,13 @@
 import DraggableContent from "../../../DraggableContent";
+import Showcase from "../../../Showcase";
 
 function DraggableList() {
     return (
         <>
-            <DraggableContent items={items}/>
+            <p>Here's a list of my all time favorite animated series. Drag to re-order the list!</p>
+            <Showcase footnote="draggable-list: react-spring">
+                <DraggableContent items={items}/>
+            </Showcase>
         </>
     )
 }
