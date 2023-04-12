@@ -4,6 +4,10 @@
 	"private": true,
 	"homepage": "https://randy-le.github.io",
 	"dependencies": {
+		"@emotion/react": "^11.10.6",
+		"@emotion/styled": "^11.10.6",
+		"@mui/icons-material": "^5.11.11",
+		"@mui/material": "^5.11.15",
 		"@react-spring/web": "^9.6.1",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.5.0",
@@ -19,7 +23,7 @@
 		"react-use-measure": "2.1.1",
 		"resize-observer-polyfill": "^1.5.1",
 		"sass": "^1.57.1",
-		"styled-components": "^5.2.0",
+		"styled-components": "^5.2.6",
 		"typescript": "^4.9.4"
 	},
 	"scripts": {

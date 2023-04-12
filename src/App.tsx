@@ -3,6 +3,7 @@ import DarkModeToggle from './components/DarkModeToggle';
 import { useState } from 'react';
 import Intro from './components/Intro/Intro';
 import MainContent from './components/main_content/MainContent';
+import NotificationHub from './components/NotificationHub';
 
 export function App() {
   let [ darkMode, setDarkMode ] = useState( false );
@@ -19,6 +20,7 @@ export function App() {
       </header>
       <MainContent/>
       <DarkModeToggle darkMode={ darkMode } handleDarkModeClick={ handleDarkModeClick }/>
+      <NotificationHub/>
     </div>
   );
 }
