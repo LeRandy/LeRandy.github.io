@@ -2,6 +2,7 @@ import { useRef, useState, useMemo, useEffect, MouseEvent } from 'react'
 import { useTransition } from '@react-spring/web'
 import { Main, Container, Message, Button, Content, Life } from './NotificationHubComponents'
 import CloseSharpIcon from '@mui/icons-material/CloseSharp';
+import './NotificationHub.scss';
 
 let id = 0
 
