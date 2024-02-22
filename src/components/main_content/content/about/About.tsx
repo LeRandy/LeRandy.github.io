@@ -15,10 +15,10 @@ function About() {
             <p><i>The layout and design of this website is 99% pure HTML/CSS/JavaScript without the use of any out-of-the-box packages or libraries.</i></p>
             <p>Let's begin!</p>
             <Subheading>Development</Subheading>
-            <p>I am a software engineer with full stack experience and an affinity for front-end development.</p>
-            <p>I enjoy making user experiences both exciting and intuitive!</p>
+            <p>I am a software engineer with full stack experience and an artisinal approach to front-end development.</p>
+            <p>I take pride in making user experiences both exciting and intuitive!</p>
             <Subheading>Education</Subheading>
-            <p>In 2018 I earned a Bachelor of Science in Software Engineering from the University of Calgary.</p>
+            <p>In 2018, I earned a Bachelor of Science in Software Engineering from the University of Calgary.</p>
             <Showcase footnote={ `hovering card: react-spring` } interaction={`Hover`}>
                 <Card image="https://propelenergytech.com/wp-content/uploads/2018/01/University-Of-Calgary-Logo.png"/>
             </Showcase>
