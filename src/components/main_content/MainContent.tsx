@@ -4,6 +4,7 @@ import './MainContent.scss';
 import ContentNavigationMenu from './navigation_menu/ContentNavigationMenu';
 
 const defaultContent = `About`;
+// figure out a way to globalize the createNotification
 
 function MainContent() {
     const [content, setContent] = useState( defaultContent );

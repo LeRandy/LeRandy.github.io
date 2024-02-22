@@ -1,0 +1,95 @@
+div.notifications {
+
+    div.MuiAutocomplete-endAdornment {
+        top: auto;
+    }
+
+    span.MuiSpeedDialIcon-root {
+        display: flex;
+        align-items: center;
+    }
+
+    
+
+    .MuiAutocomplete-root:hover {
+        .MuiOutlinedInput-notchedOutline {
+            border-color: #115644 !important;
+        }
+
+        .MuiFormLabel-root {
+            color: #115644;
+        }
+        
+        svg {
+            color: #115644;
+        }
+    }
+
+    .Mui-focused {
+        .MuiFormLabel-root {
+            color: #115644;
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+            border-color: #115644;
+        }
+    }
+
+    
+    
+}
+
+div.dark-mode {
+
+    .MuiOutlinedInput-root {
+        color: #98ebd5 !important;
+    }
+
+    span {
+        color: white !important;
+    }
+
+    border: 1px solid white !important;
+
+    .MuiAutocomplete-root {
+        .MuiOutlinedInput-notchedOutline {
+            border-color: white !important;
+        }
+    }
+    
+    .MuiFormLabel-root, input {
+        color: white;
+    }
+    
+    .MuiAutocomplete-root:hover {
+        .MuiOutlinedInput-notchedOutline {
+            border-color: #98ebd5 !important;
+        }
+
+        .MuiFormLabel-root {
+            color: #98ebd5;
+        }
+
+        svg {
+            color: #98ebd5 !important;
+        }
+    }
+
+    .Mui-focused {
+        .MuiFormLabel-root {
+            color: #98ebd5;
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+            border-color: #98ebd5 !important;
+        }
+        
+        svg {
+            color: #98ebd5 !important;
+        }
+    }
+
+    svg {
+        color: white !important;
+    }
+}
