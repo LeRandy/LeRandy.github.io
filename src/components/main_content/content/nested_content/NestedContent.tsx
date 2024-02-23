@@ -7,7 +7,7 @@ function NestedContent() {
         <div>
             <p>I'm an NBA basketball fan.</p>
             <p>Here are some of my favorite teams.</p>
-            <Showcase footnote={ `nested-boxes: react-spring` } interaction={ "Click to Reveal" }>
+            <Showcase footnote={ `react-spring: nested-boxes` } interaction={ "Click to Reveal" }>
                 <NestedBoxes data={ teams } initialImage={ `https://www.edigitalagency.com.au/wp-content/uploads/NBA-logo-png.png` }/>
             </Showcase>
         </div>
