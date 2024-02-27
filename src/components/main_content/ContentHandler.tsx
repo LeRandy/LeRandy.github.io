@@ -8,6 +8,7 @@ import ContactInformation from './content/contact_information/ContactInformation
 import ViewPager from './content/view_pager/ViewPager';
 import DraggableList from './content/draggable_list/DraggableList';
 import Notifications from './content/notifications/Notifications';
+import ImageCollage from './content/image_collage/ImageCollage';
 
 interface Props {
     content: string;
@@ -32,6 +33,8 @@ export function ContentHandler( props: Props ) {
                 return <DraggableList/>
             case `Notifications & Card`:
                 return <Notifications/>
+            case `Image Collage`:
+                return <ImageCollage/>
             default:
                 return <Subheading>*IN PROGRESS*</Subheading>
         }
