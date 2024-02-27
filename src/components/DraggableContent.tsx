@@ -25,7 +25,6 @@ function DraggableList( props: DraggableListProps ) {
   return (
     <div className={ "draggable-list" } style={{ height: items.length * 70 }}>
       {springs.map(({ zIndex, shadow, y, scale }, i) => {
-        console.log( items[i] );
         return (
           <animated.div
           {...bind(i)}

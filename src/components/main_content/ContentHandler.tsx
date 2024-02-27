@@ -30,7 +30,7 @@ export function ContentHandler( props: Props ) {
                 return <ContactInformation/>
             case `Draggable List`:
                 return <DraggableList/>
-            case `Notifications`:
+            case `Notifications & Card`:
                 return <Notifications/>
             default:
                 return <Subheading>*IN PROGRESS*</Subheading>

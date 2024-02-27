@@ -7,7 +7,7 @@ import NotificationHub from './components/NotificationHub';
 
 export function App() {
   let [ darkMode, setDarkMode ] = useState( false );
-  let [ background ] = useState( backgroundImage() )
+  let [ background ] = useState( backgroundImage() );
 
   function handleDarkModeClick() {
     setDarkMode( !darkMode );

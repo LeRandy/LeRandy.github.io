@@ -1,18 +1,16 @@
-import { Autocomplete, SpeedDial, SpeedDialIcon } from "@mui/material";
-import SpeedDialAction from '@mui/material/SpeedDialAction';
+import { Autocomplete } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Showcase from "../../../Showcase";
 import './Notifications.scss'
-import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
-import SaveIcon from '@mui/icons-material/Save';
-import PrintIcon from '@mui/icons-material/Print';
-import ShareIcon from '@mui/icons-material/Share';
 import Subheading from "../../../Subheading";
 import films from "./films";
+import DisplayCard from "../../../DisplayCard";
+import ArrowOutwardRoundedIcon from '@mui/icons-material/ArrowOutwardRounded';
+import favoriteMovies from './favoriteMovies';
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 // fix speed dial icon size
-// add slide transition snackbar
-// add card component for favorite movies? idk
+// add card component for favorite movies? idk **
 // add temporary drawer
 // add menu component
 // figure out css for these mui components
@@ -21,6 +19,7 @@ function Notifications() {
     return (
         <div className={ `notifications` }>
             <Subheading>Movie Select Dropdown</Subheading>
+			<p>Here is a personalized dropdown of movies.</p>
             <Showcase footnote="material-ui: autocomplete">
               { /* change color of this */}
               <Autocomplete
@@ -28,7 +27,6 @@ function Notifications() {
                   id="combo-box-demo"
                   options={ films }
                   disableClearable
-                  blurOnSelect
                   sx={ { width: 350 } }
                   renderInput={ ( params ) => <TextField { ...params } label="Movie" />}
                   onChange={ ( _event, newValue ) => { ( window as any ).createNotification( newValue?.label + ` (${newValue.year})` ) } }
@@ -36,33 +34,33 @@ function Notifications() {
             </Showcase>
             <br/>
             <br/>
-            { /* <Subheading>Speed Dial</Subheading>
-            <Showcase footnote="material-ui: speed-dial">
-              <SpeedDial
-                ariaLabel="SpeedDial"
-                icon={<SpeedDialIcon/>}
-                direction="right"
-              >
-                { buttons.map( ( button ) => (
-                  <SpeedDialAction
-                    key={ button.name }
-                    icon={ button.icon }
-                    sx={ { height: `0.8em` } }
-                    tooltipTitle={ button.name }
-                  />
-                ) ) }
-              </SpeedDial>
+            <Subheading>Card</Subheading>
+			<p>These are some of my favorite movies!</p>
+            <Showcase footnote="material-ui: card">
+            	<Grid container spacing={ 2 }>
+					{ favoriteMovies.map( movie => 
+						<Grid key={ movie.title } xs={ 4 } >
+							<DisplayCard
+								// width={ 350 }
+								title={ movie.title }
+								media={ {
+									name: movie.title,
+									image: movie.image,
+									height: "150"
+								} }
+								description={ movie.description }
+								cardActions={ [ { 
+									// name: "Icon",
+									icon: <ArrowOutwardRoundedIcon/>,
+									callback: () => { window.open( movie.imdbLink, "_blank" ) }
+								} ] }
+								/>
+						</Grid>
+					) }
+              	</Grid>
             </Showcase>
-            */ }
         </div>
     )
 }
 
 export default Notifications;
-
-const buttons = [
-  { icon: <FileCopyIcon />, name: 'Copy' },
-  { icon: <SaveIcon />, name: 'Save' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
-];

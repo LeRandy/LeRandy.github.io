@@ -1,0 +1,26 @@
+div.MuiPaper-root {
+    transition: transform 0.5s ease-in-out;
+}
+
+div.MuiPaper-root:hover {
+    transform: translate(5px, -5px);
+}
+
+.dark-mode {
+    div.MuiGrid2-root {
+    
+        div.MuiCardContent-root {
+            color: lightgrey !important;
+            background-color: black;
+        }
+
+        p {
+            color: lightgrey !important;
+        }
+    
+        div.MuiCardActions-root {
+            color: white;
+            background-color: black;
+        }
+    }
+}
