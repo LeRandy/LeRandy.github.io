@@ -9,7 +9,7 @@
             border-radius: 5px;
         }
         
-        .container {
+        .nested-boxes-container {
             position: relative;
             display: grid;
             grid-template-columns: repeat(4, minmax(100px, 1fr));

@@ -54,7 +54,7 @@ function NestedBoxes( props: Props ) {
         <div className={ `wrapper` }>
             <animated.div
                 style={{ ...rest, width: size, height: size }}
-                className={ `container` }
+                className={ `nested-boxes-container` }
                 onClick={() => set(open => !open)}
                 >
                 {transition((style: any, item:any) => (
