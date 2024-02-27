@@ -12,10 +12,10 @@ export default [
       link: 'https://google.com/search?q=Starcraft'
     },
     {
-      img: 'https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587514212_1078.jpg',
-      title: 'Lost Ark',
-      author: '@Smilegate',
-      link: 'https://google.com/search?q=Lost+Ark'
+      img: 'https://image.api.playstation.com/vulcan/img/cfn/11307RW7B5mvRMeOG-1pM9RnGdpRQVQ2iXinFe9755wHVXH0-mRqwizRWZQK8wMHat3XhtITgBGvRuT7JLJkkZenNxUerkoj.png',
+      title: 'Monster Hunter',
+      author: '@Capcom',
+      link: 'https://google.com/search?q=Monster+Hunter'
     },
     {
       img: 'https://esi.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MjAzMjMzNzg0ODQ0MjY0NjMw/tft_logo.jpg',
@@ -42,10 +42,10 @@ export default [
       link: 'https://google.com/search?q=Final+Fantasy+XVI'
     },
     {
-      img: 'https://image.api.playstation.com/vulcan/img/cfn/11307RW7B5mvRMeOG-1pM9RnGdpRQVQ2iXinFe9755wHVXH0-mRqwizRWZQK8wMHat3XhtITgBGvRuT7JLJkkZenNxUerkoj.png',
-      title: 'Monster Hunter',
-      author: '@Capcom',
-      link: 'https://google.com/search?q=Monster+Hunter'
+      img: 'https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587514212_1078.jpg',
+      title: 'Lost Ark',
+      author: '@Smilegate',
+      link: 'https://google.com/search?q=Lost+Ark'
     },
     {
       img: 'https://image.api.playstation.com/vulcan/ap/rnd/202104/0517/9AcM3vy5t77zPiJyKHwRfnNT.png',
